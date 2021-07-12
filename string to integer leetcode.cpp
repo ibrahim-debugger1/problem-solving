@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//https://leetcode.com/problems/string-to-integer-atoi/
     int myAtoi(string s) {
         int i=0;
         while(s[i]==' '){
