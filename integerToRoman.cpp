@@ -4,7 +4,7 @@ using namespace std;
 	//https://leetcode.com/problems/integer-to-roman/
 	/*
 	i solved it after a long time i don't know why but i faced a problem 
-	that makes me to search for the solution idea and i see the idea and implement the code 
+	that makes me search for the solution idea and i see the idea and implement the code 
 	finally i got accepted solution wooow
 	*/
      pair<int,string>p[13];
