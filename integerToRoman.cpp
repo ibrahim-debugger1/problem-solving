@@ -6,6 +6,7 @@ using namespace std;
 	i solved it after a long time i don't know why but i faced a problem 
 	that makes me search for the solution idea and i see the idea and implement the code 
 	finally i got accepted solution wooow
+	i tried to implement the common numeral and handle the exeption numeral like "900 or 400" but i failed
 	*/
      pair<int,string>p[13];
      p[0]=make_pair(1000,"M");
