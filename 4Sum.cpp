@@ -24,7 +24,7 @@ public:
         }
         sort(nums.begin(),nums.end());
     int si=nums.size();
-        //you have to ensure that every loop doesn't reuse the same number that's mean you have to          //check 3 loops and the third one with two variable
+        //you have to ensure that every loop doesn't reuse the same number that's mean you have to check 3 loops and the third one with two variable
      for(int j=0;j<si;j++){
          if(j>0 && nums[j]==nums[j-1])
              continue;
