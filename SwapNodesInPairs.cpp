@@ -1,4 +1,5 @@
- public ListNode swapPairs(ListNode head) {
+//easy question but you have to be careful about nullpointerexception
+public ListNode swapPairs(ListNode head) {
        if(head==null)
            return null;
         if(head.next==null)
