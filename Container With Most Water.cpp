@@ -14,7 +14,3 @@ int maxArea(vector<int>& height) {
         return sol;
         
     }
-int main(){
-   
-    return 0;
-}
