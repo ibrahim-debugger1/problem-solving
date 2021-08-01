@@ -1,3 +1,4 @@
+vector<string>sol;
 void generateParenthesisByRec(int n,string s,int r,int l){
         if(r==l && r!=0 && r==n){
             sol.push_back(s);
