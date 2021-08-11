@@ -8,6 +8,7 @@ void nextPermutation(vector<int>& nums) {
                 break;
             }
         }
+        //this is a special case when the vecotr is in decreasing order you will return to the sorted vector
         if(flag){
             sort(nums.begin(),nums.end());
             return ;
