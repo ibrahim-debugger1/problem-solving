@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/search-in-rotated-sorted-array/
-//that is a great question i tried my best to solve it but i can't therefor i took the idea from youtube not the code just the idea hehehehehehe
+//that is a great question i tried my best to solve it but i can't do it therefor i took the idea from youtube not the code just the idea hehehehehehe
 int search(vector<int>& nums, int target) {
         int l=0,r=nums.size()-1;
         while(l<r){
