@@ -1,4 +1,4 @@
-//it's hard to implement it i try to solve it but i cheat the idea from youtube 
+//it's hard to implement it i try to solve it but i cheat the solution from youtube 
 vector<vector<int>>ve;
     
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
