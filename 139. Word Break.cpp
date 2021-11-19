@@ -1,4 +1,4 @@
-    //so hard to understand the solution (not to creat it) 
+    //so hard to understand the solution (not to create it) 
 	bool dp[302];
     bool wordBreak(string s, vector<string>& wordDict) {
         for(int i=0;i<s.size();i++){
