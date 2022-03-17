@@ -1,27 +1,42 @@
-//https://cses.fi/problemset/task/1637/
-
-
-#include <bits/stdc++.h>
-using namespace std;
-int com(int temp){
-  int x=INT_MIN;
-  while(temp>0){
-    x=max(x,temp%10);
-    temp/=10;
+  //remove one's that are not connected to a border 
+  #include <bits/stdc++.h>
+  using namespace std;
+  int n;
+  bool visit[1000][1000];
+  int arr[1000][1000];
+  void dfs(int i,int j){
+    if(i<0 || i>=n || j<0 || j>=n || arr[i][j]==0 || visit[i][j])
+      return;
+    visit[i][j]=true;
+    dfs(i+1,j);dfs(i,j+1);dfs(i-1,j);dfs(i,j-1);
   }
-  return x;
-}
-int main() {
+  int main() {
     #ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin); 
+    freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
-    int n,count=0;
     cin>>n;
-    while(n!=0){
-      count++;
-      n-=(com(n));
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        cin>>arr[i][j];
+      }
     }
-    cout<<count<<endl;
-      return 0;
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        if((i==0 || i==n-1 || j==0 || j==n-1) && (arr[i][j]==1))
+          dfs(i,j);
+      }
     }
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        if(arr[i][j]==1 && visit[i][j]==false)
+          arr[i][j]=0;
+      }
+    }
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        cout<<arr[i][j]<<" ";
+      }
+      cout<<endl;
+    }
+  }
